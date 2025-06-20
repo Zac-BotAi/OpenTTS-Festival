@@ -1,6 +1,13 @@
 # OpenTTS-Festival
 OpenTTS-Festival is an Open Source TTS that can be Deployed on Render and use it for Make.com and n8n Workflows
 
+
+Repository structure
+my-opentts-festival/
+├── Dockerfile
+└── render.yaml
+
+
 📝 Deployment steps
 
 1. Create a new GitHub repo (e.g. my-opentts-festival) and push these files.
@@ -36,3 +43,11 @@ Once your Render service is live:
 
 
 3. Store the MP3 — send it to Google Drive or Airtable
+
+
+Run:
+
+docker build -t opentts-festival .
+docker-compose up -d
+
+This starts an HTTP TTS server on http://<your-domain>:5500  .
