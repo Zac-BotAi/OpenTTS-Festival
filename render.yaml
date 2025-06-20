@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: opentts-festival
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    port: 5500
+    autoDeploy: true
